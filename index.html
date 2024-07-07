@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cálculo de Carga de Viento</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Cálculo de Carga de Viento</h1>
+<div class="formula">
+  <p>La carga de viento (F) se calcula como:</p>
+  <p style="color: blue; font-weight: bold;">F = 0.5 × Cp × V<sup>2</sup> × A</p>
+  <p>Donde:</p>
+  <p>Cp es el coeficiente de presión del viento,</p>
+  <p>V es la velocidad del viento,</p>
+  <p>A es el área expuesta al viento.</p>
+</div>
+<div class="input-container">
+  <label for="cp">Cp (Coeficiente de presión del viento):</label>
+  <input type="number" id="cp">
+</div>
+<div class="input-container">
+  <label for="v">V (Velocidad del viento):</label>
+  <input type="number" id="v">
+</div>
+<div class="input-container">
+  <label for="a">A (Área expuesta al viento):</label>
+  <input type="number" id="a">
+</div>
+<button onclick="calcular()">Calcular</button>
+<button onclick="restablecer()">Restablecer</button>
+<div id="grafica"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
